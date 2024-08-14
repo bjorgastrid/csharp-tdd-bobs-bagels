@@ -15,5 +15,17 @@ public class Tests
         Assert.AreEqual(b.bagles.Count, 1);
     }
 
+    [Test]
+    public void RemoveItemTest()
+    {
+        BagelBasket b = new BagelBasket();
+
+        b.add("poppy seed");
+
+        b.remove("poppy seed");
+
+        Assert.AreEqual(b.bagles.Count, 0);
+    }
+
 
 }
