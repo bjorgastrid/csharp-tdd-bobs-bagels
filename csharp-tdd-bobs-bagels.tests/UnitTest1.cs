@@ -49,4 +49,15 @@ public class Tests
         Assert.That(!added);
 
     }
+
+    [Test]
+    public void ChangeCapacityTest()
+    {
+        BagelBasket b = new BagelBasket();
+
+        b.Capacity = 10;
+
+        Assert.AreEqual(b.Capacity, 10);
+
+    }
 }
