@@ -12,7 +12,9 @@ namespace tdd_bobs_bagels.CSharp.Main
 
         public bool add(string bagel)
         {
-            return false;
+            bagles.Add(bagel);
+
+            return true;
         }
 
        
