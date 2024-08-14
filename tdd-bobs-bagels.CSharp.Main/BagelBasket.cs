@@ -17,8 +17,10 @@ namespace tdd_bobs_bagels.CSharp.Main
             return true;
         }
 
-        public bool remove(string v)
+        public bool remove(string bagel)
         {
+            bagles.Remove(bagel);
+
             return false;
         }
 
