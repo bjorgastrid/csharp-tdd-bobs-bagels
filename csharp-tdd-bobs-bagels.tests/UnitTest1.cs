@@ -60,4 +60,28 @@ public class Tests
         Assert.AreEqual(b.Capacity, 10);
 
     }
+
+    [Test]
+    public void RemoveItemInBasketTest()
+    {
+        BagelBasket b = new BagelBasket();
+        b.add("cream cheese");
+
+        bool removed = b.remove("cream cheese");
+
+        Assert.That(removed);
+
+    }
+
+    [Test]
+    public void RemoveItemNotInBasketTest()
+    {
+        BagelBasket b = new BagelBasket();
+        b.add("poppy seed");
+
+        bool removed = b.remove("cream cheese");
+
+        Assert.That( !removed);
+
+    }
 }
