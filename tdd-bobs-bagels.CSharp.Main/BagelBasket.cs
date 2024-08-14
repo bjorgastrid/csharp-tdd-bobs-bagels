@@ -27,7 +27,11 @@ namespace tdd_bobs_bagels.CSharp.Main
 
         public bool remove(string bagel)
         {
-            bagles.Remove(bagel);
+            if (bagles.Contains(bagel))
+            {
+                bagles.Remove(bagel);
+                return true;
+            }
 
             return false;
         }

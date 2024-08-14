@@ -81,7 +81,7 @@ public class Tests
 
         bool removed = b.remove("cream cheese");
 
-        Assert.That( !removed);
+        Assert.That(!removed);
 
     }
 }
