@@ -10,11 +10,19 @@ namespace tdd_bobs_bagels.CSharp.Main
 {
         public List<string> bagles = new List<string>();
 
+        public int capacity = 1;
+
         public bool add(string bagel)
         {
-            bagles.Add(bagel);
+            if (bagles.Count < capacity)
+            {
 
+            bagles.Add(bagel);
             return true;
+
+            }
+
+            return false;
         }
 
         public bool remove(string bagel)
