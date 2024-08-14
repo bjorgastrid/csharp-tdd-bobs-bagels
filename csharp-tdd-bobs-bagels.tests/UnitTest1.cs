@@ -27,5 +27,26 @@ public class Tests
         Assert.AreEqual(b.bagles.Count, 0);
     }
 
+    [Test]
+    public void AddToBasketWithRoomTest()
+    {
+        BagelBasket b = new BagelBasket();
 
+        bool added = b.add("poppy seed");
+
+        Assert.That(added);
+
+    }
+
+    [Test]
+    public void AddToFullBasketTest()
+    {
+        BagelBasket b = new BagelBasket();
+        b.add("cream cheese");
+
+        bool added = b.add("poppy seed");
+
+        Assert.That(!added);
+
+    }
 }
